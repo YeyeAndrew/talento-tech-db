@@ -18,3 +18,12 @@ exports.createPokemonStatus = async (req, res) => {
         return res.status(500).json({e})
     }
 }
+exports.getPokemonStatus = async (req, res) => {
+    try {
+        const status = await statusPokemon.find({})
+        res.status(200).json(status)
+    } catch (e) {
+        console.error(e)
+        return res.status(500).json({e})
+    }
+}

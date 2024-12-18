@@ -1,5 +1,5 @@
 const express = require("express");
-const {test, createPokemonStatus} = require("../controllers/pokemonControllers")
+const {test, createPokemonStatus,getPokemonStatus } = require("../controllers/pokemonControllers")
 const router = express.Router()
 
 router.get("/test",(req,res)=> {
@@ -9,6 +9,6 @@ router.get("/test",(req,res)=> {
 
 router.get("/test", test)
 router.post("/", createPokemonStatus)
-
+router.get("/",getPokemonStatus)
 module.exports = router
 
