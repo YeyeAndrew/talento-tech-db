@@ -1,5 +1,5 @@
 const express = require("express");
-const {test} = require("../controllers/pokemonControllers")
+const {test, createPokemonStatus} = require("../controllers/pokemonControllers")
 const router = express.Router()
 
 router.get("/test",(req,res)=> {
@@ -8,5 +8,7 @@ router.get("/test",(req,res)=> {
 })
 
 router.get("/test", test)
+router.post("/", createPokemonStatus)
 
 module.exports = router
+

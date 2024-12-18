@@ -9,11 +9,11 @@ const PokemonSchema = new Schema ({
     },
     view:{
         type:Boolean,
-        default:false
+        default:true
     },
     catch:{
         type:Boolean,
-        default:true
+        default:false
     },
     in_team:{
         type:Boolean,
