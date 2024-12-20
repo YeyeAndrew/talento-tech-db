@@ -1,0 +1,20 @@
+meta {
+  name: actualizar in team pokemon
+  type: http
+  seq: 6
+}
+
+put {
+  url: 127.0.0.1:3000/api/pokemon/catch/3
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pokemon_id": 3,
+    "view": true,
+    "catch": true,
+    "in_team": false
+  }
+}
