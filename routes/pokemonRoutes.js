@@ -1,5 +1,5 @@
 const express = require("express");
-const {test, createPokemonStatus,getPokemonStatus, getPokemonByPokemonId, catchPokemonByPokemon_id } = require("../controllers/pokemonControllers")
+const {test, createPokemonStatus,getPokemonStatus, getPokemonByPokemonId, catchPokemonByPokemonId } = require("../controllers/pokemonControllers")
 const router = express.Router()
 
 // router.get("/test",(req,res)=> {
